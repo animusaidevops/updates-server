@@ -1,0 +1,13 @@
+{
+  "version": "1.0.0",
+  "releaseDate": "2026-03-12",
+  "releaseNotes": "Initial release. HIPAA PHI redaction with spaCy and RoBERTa detection pipeline.",
+  "minimumOsVersion": "10.0.0",
+  "platforms": {
+    "windows-x86_64": {
+      "url": "https://updates.animusai.com/redactforge/RedactForgeAI_1.0.0_setup.exe",
+      "sha256": "",
+      "size": 0
+    }
+  }
+}

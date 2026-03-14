@@ -1,0 +1,13 @@
+{
+  "version": "1.0.0",
+  "releaseDate": "2026-03-12",
+  "releaseNotes": "Initial release. STIG/POAM management with AI-powered risk scoring.",
+  "minimumOsVersion": "10.0.0",
+  "platforms": {
+    "windows-x86_64": {
+      "url": "https://updates.animusai.com/poamforge/POAMForge-AI_1.0.0_x64-setup.exe",
+      "sha256": "",
+      "size": 199348967
+    }
+  }
+}

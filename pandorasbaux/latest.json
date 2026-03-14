@@ -1,0 +1,13 @@
+{
+  "version": "1.0.0",
+  "releaseDate": "2026-03-12",
+  "releaseNotes": "Initial release. Air-gapped container security platform.",
+  "minimumOsVersion": "10.0.0",
+  "platforms": {
+    "docker": {
+      "url": "https://updates.animusai.com/pandorasbaux/PandorasBaux_1.0.0_installer.zip",
+      "sha256": "",
+      "size": 0
+    }
+  }
+}

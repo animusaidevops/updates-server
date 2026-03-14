@@ -1,0 +1,13 @@
+{
+  "version": "1.0.0",
+  "releaseDate": "2026-03-12",
+  "releaseNotes": "Initial release. HIPAA-compliant nursing documentation with AI assistance.",
+  "minimumOsVersion": "10.0.0",
+  "platforms": {
+    "windows-x86_64": {
+      "url": "https://updates.animusai.com/clinicforge/ClinicForge-AI_1.0.0_x64-setup.exe",
+      "sha256": "",
+      "size": 4205666
+    }
+  }
+}
