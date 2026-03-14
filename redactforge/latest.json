@@ -5,7 +5,7 @@
   "minimumOsVersion": "10.0.0",
   "platforms": {
     "windows-x86_64": {
-      "url": "https://updates.animusai.com/redactforge/RedactForgeAI_1.0.0_setup.exe",
+      "url": "https://updates.animusai.net/redactforge/RedactForgeAI_1.0.0_setup.exe",
       "sha256": "",
       "size": 0
     }

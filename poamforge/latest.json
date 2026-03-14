@@ -5,7 +5,7 @@
   "minimumOsVersion": "10.0.0",
   "platforms": {
     "windows-x86_64": {
-      "url": "https://updates.animusai.com/poamforge/POAMForge-AI_1.0.0_x64-setup.exe",
+      "url": "https://updates.animusai.net/poamforge/POAMForge-AI_1.0.0_x64-setup.exe",
       "sha256": "",
       "size": 199348967
     }
