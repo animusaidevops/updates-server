@@ -9,5 +9,7 @@
       "sha256": "",
       "size": 199348967
     }
-  }
+  },
+  "successor": "/elysium/latest.json",
+  "successorNote": "POAMForge AI was renamed Elysium at 1.3.0. This manifest stays at its current version for clients still pinned to /poamforge/latest.json; it is bumped only when a SIGNED 1.3.0 exists. New clients check /elysium/latest.json."
 }

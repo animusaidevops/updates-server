@@ -1,0 +1,17 @@
+{
+  "version": "1.3.0",
+  "releaseDate": "2026-09-12",
+  "releaseNotes": "Elysium 1.3.0. Renamed from POAMForge AI; application data now lives under the Elysium directory in %LOCALAPPDATA%, with a one-time migration from the legacy directory. Adds an About box (version, build commit, license authority fingerprint, resolved data directory) and an update check that reports whether its answer came from the update server or from the offline fallback.",
+  "minimumOsVersion": "10.0.0",
+  "signed": false,
+  "prerelease": true,
+  "successorOf": "/poamforge/latest.json",
+  "platforms": {
+    "windows-x86_64": {
+      "sha256": "9d13fd29f1c2d2a982b3684b19d83a6acc260b783d54543b876abf83b90c9ffd",
+      "size": 224817152,
+      "filename": "Elysium_1.3.0_x64_en-US.msi",
+      "note": "There is no url key here, on purpose. The 1.3.0 MSI is UNSIGNED - blocked on biz-1, the Sectigo EV certificate - and is not published for download. The client's PlatformEntry.url is Option<String>, so an absent url deserializes to None and download_url becomes an empty string: nothing 404s and no installer is offered. Add the url only when a signed artifact is actually hosted, and set signed to true in the same commit."
+    }
+  }
+}
