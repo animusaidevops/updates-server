@@ -1,0 +1,38 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://updates.animusai.net/schema/server-manifest.schema.json",
+  "title": "ServerManifest",
+  "description": "The manifest shape the Elysium client parses. Mirrors the Rust struct `ServerManifest` in elysium: source/src-tauri/src/updater.rs. serde uses rename_all = camelCase and does NOT deny unknown fields, so extra keys are allowed (additionalProperties: true) and the server stays free to add keys without breaking installed clients. Keep this schema in sync with that struct.",
+  "type": "object",
+  "required": ["version"],
+  "additionalProperties": true,
+  "properties": {
+    "version": {
+      "type": "string",
+      "description": "Required. Rust: `version: String`."
+    },
+    "releaseDate": {
+      "type": "string",
+      "description": "Optional. Rust: `release_date: Option<String>`."
+    },
+    "releaseNotes": {
+      "type": "string",
+      "description": "Optional. Rust: `release_notes: Option<String>`."
+    },
+    "platforms": {
+      "type": "object",
+      "description": "Optional. Rust: `platforms: Option<HashMap<String, PlatformEntry>>`.",
+      "additionalProperties": {
+        "type": "object",
+        "description": "PlatformEntry. Rust declares only `url: Option<String>`; other keys (sha256, size, filename, note) are tolerated (not deny_unknown_fields).",
+        "additionalProperties": true,
+        "properties": {
+          "url": {
+            "type": "string",
+            "description": "Optional. Rust: `url: Option<String>`. When present it MUST resolve to HTTP 200 (enforced by CI). When absent, download_url deserializes to an empty string and no installer is offered."
+          }
+        }
+      }
+    }
+  }
+}
