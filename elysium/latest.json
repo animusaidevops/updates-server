@@ -5,6 +5,7 @@
   "minimumOsVersion": "10.0.0",
   "signed": false,
   "prerelease": true,
+  "note": "unsigned build; download available after code-signing",
   "successorOf": "/poamforge/latest.json",
   "platforms": {
     "windows-x86_64": {
