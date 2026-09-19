@@ -6,6 +6,7 @@
   "signed": false,
   "platforms": {
     "windows-x86_64": {
+      "url": "https://updates.animusai.net/poamforge/POAMForge-AI_1.0.0_x64-setup.exe",
       "sha256": "b8e294390760724e38e6cb345e787aed8c2ecda3d5221c082592fe964359f2ff",
       "size": 269303808,
       "filename": "Elysium_1.2.5_x64_en-US.msi",
